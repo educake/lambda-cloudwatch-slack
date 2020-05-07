@@ -114,6 +114,11 @@ The final step is to deploy the integration to AWS Lambda:
 
 ## Tests
 
+Tests will post a message to Slack based on one of the predefined payloads.
+
+You need to fill in at least `UNENCRYPTED_HOOK_URL` with a URL of a Slack channel (you can use a test one for this purposes) or
+if you have a small service running locally that will receive and output a POST request you can use that.
+
 With the variables filled in, you can test the function:
 
 ```
